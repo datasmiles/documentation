@@ -41,3 +41,10 @@ dlike_cnt counter,
 primary key (pst_id,cmnt_id)
 );
 
+
+create table ew_vdo_avg_rating
+(
+vdo_id text primary key,
+vdo_rating counter,
+no_of_ratings counter
+);
