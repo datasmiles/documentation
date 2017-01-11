@@ -254,7 +254,15 @@ primary key(usr_id,crs_id)
 );
 
 
-
+CREATE TABLE ew1.vt_usr_fpass_otp (
+    usr_id text PRIMARY KEY,
+    otp text,
+    otp_exp_tm int,
+    otp_snt_dt timestamp,
+    pwd text,
+    usr_email text,
+    usr_ph text
+);
 
 
 
