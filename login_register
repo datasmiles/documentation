@@ -265,5 +265,12 @@ CREATE TABLE ew1.vt_usr_fpass_otp (
 );
 
 
-
+create table ew_subs
+(
+subs_id  uuid primary key,
+usr_id text,
+subs_email  text,
+subs_typ  text,
+subs_dt timestamp
+);
 
