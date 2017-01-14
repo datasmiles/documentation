@@ -113,3 +113,34 @@ partition text,
 clk_tm timestamp
 )
 
+CREATE TABLE ew1.usr_pg_stats (
+    pg_vw_id uuid PRIMARY KEY,
+    browser_desc text,
+    browser_nm text,
+    browser_ver text,
+    city text,
+    country text,
+    curr_pg text,
+    device_pixel_ratio text,
+    flash_install text,
+    geo_loc_info text,
+    hostname text,
+    ip text,
+    key text,
+    loc text,
+    login_tkn text,
+    offset text,
+    org text,
+    os_archi text,
+    os_family text,
+    os_ver text,
+    partition text,
+    pg_vw_tm timestamp,
+    prev_pg text,
+    region text,
+    res_height text,
+    res_width text,
+    tkn text,
+    usr_id text
+)
+
