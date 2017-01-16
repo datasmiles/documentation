@@ -283,3 +283,22 @@ usr_id text,
 subs_email  text,
 unsubs_dt timestamp,
 );
+
+CREATE TABLE ew1.ew_vdo_vws (
+    vdo_id text PRIMARY KEY,
+    dwn_cnt counter,
+    upv_cnt counter,
+    vw_num counter
+);
+
+CREATE TABLE ew1.ew_vdo_rating (
+    usr_id text,
+    vdo_id text,
+    crt_dt timestamp,
+    dnv int,
+    rating int,
+    upd_dt timestamp,
+    upv int,
+    PRIMARY KEY (usr_id, vdo_id)
+);
+
