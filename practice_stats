@@ -142,5 +142,34 @@ CREATE TABLE ew1.usr_pg_stats (
     res_width text,
     tkn text,
     usr_id text
-)
+);
+
+
+CREATE TABLE ew1.usr_que_vw_stats (
+    que_stats uuid PRIMARY KEY,
+    tkn text,
+    usr_id text,
+    q_attr text,
+    q_attr_val1 text,
+    q_attr_val2 text,
+    q_attr_val3 text,
+    q_id text,
+    q_vw_dt timestamp
+);
+
+drop table usr_que_vw_stats;
+
+CREATE TABLE usr_que_vw_stats
+(
+    que_stats varchar2(300),
+    tkn  varchar2(3000),
+    usr_id varchar2(3000),
+    q_attr varchar2(3000),
+    q_attr_val1 varchar2(3000),
+    q_attr_val2 varchar2(3000),
+    q_attr_val3 varchar2(3000),
+    q_id varchar2(3000),
+    q_vw_dt date
+);
+
 
