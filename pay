@@ -45,3 +45,18 @@ billing_notes text,
 trans_date text,
 bin_country text
 ) ;
+
+
+
+
+create table ew_training_bat_email_template
+(
+pk_id uuid primary key,
+frm_nm   text,
+bat_id text,
+training_id text,
+email_sub  text,
+email_body text,
+crt_dt timestamp
+);
+
