@@ -36,12 +36,13 @@ crt_dt timestamp
 );
 
 
-create table ew_usr_shrt_dtls
-(
-usr_id      text primary key,
-dsp_nm  text,
-usr_email   text,
-usr_pic text
+CREATE TABLE ew1.ew_usr_shrt_dtls (
+    usr_id text PRIMARY KEY,
+    dsp_nm text,
+    usr_email text,
+    usr_ph text,
+    usr_pic text,
+    usr_role text
 );
 
 
