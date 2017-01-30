@@ -1,0 +1,14 @@
+create table ew_roles_m
+(
+role_id  text primary key,
+role_name text,
+create_dt timestamp
+);
+
+
+create table ew_forms_m
+(
+form_id  text primary key,
+form_name text,
+create_dt timestamp
+);
