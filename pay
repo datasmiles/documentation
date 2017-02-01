@@ -60,3 +60,18 @@ email_body text,
 crt_dt timestamp
 );
 
+CREATE TABLE ew1.ew_bat_ds_timing (
+    batch_id bigint PRIMARY KEY,
+    training_id text,
+    cls_start_dt timestamp,
+    cls_end_dt timestamp,
+    cls_start_tm text,
+    nxt_cls_dt timestamp,
+    nxt_cls_tm text,
+    status text
+) ;
+
+
+    alter table ew1.ew_bat_dtls add cls_end_dt timestamp;
+        alter table ew1.ew_bat_dtls add  cls_actual_end_dt timestamp,
+
