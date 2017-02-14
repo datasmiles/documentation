@@ -220,6 +220,9 @@ msg text ,
 last_class_video text,
 primary key(bat_id)
 );
+ alter ew_bat_dtls add bat_nm text;
+
+
 
 create table ew_bat_sess_dtls
 (
