@@ -74,4 +74,16 @@ CREATE TABLE ew1.ew_bat_ds_timing (
 
     alter table ew1.ew_bat_dtls add cls_end_dt timestamp;
         alter table ew1.ew_bat_dtls add  cls_actual_end_dt timestamp,
+        
+        
+        
+        create table ew_usr_enroll_bat_dtls
+(
+usr_id  text,
+enroll_bat text,
+enroll_dt timestamp,
+enroll_status  boolean,
+primary key((usr_id),enroll_bat)
+);
+
 
