@@ -87,3 +87,17 @@ primary key((usr_id),enroll_bat)
 );
 
 
+
+create table ew_usr_enroll_bat_uploads
+(
+usr_assign_upload_pk  uuid,
+usr_id  text,
+enroll_bat text,
+upload_module text,
+upload_item text,
+upload_path text,
+upload_nm text,
+upload_tm timestamp,
+primary key ((usr_id), usr_assign_upload_pk)
+);
+
