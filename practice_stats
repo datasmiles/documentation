@@ -175,7 +175,7 @@ CREATE TABLE usr_que_vw_stats
 
  CREATE TABLE SCOTT.USR_QUE_VW_STATS
 (
-  QUE_STATS    VARCHAR2(300 BYTE),
+  QUE_STAT_id    VARCHAR2(300 BYTE),
   TKN          VARCHAR2(3000 BYTE),
   USR_ID       VARCHAR2(3000 BYTE),
   Q_EVENT_NM       VARCHAR2(3000 BYTE),
@@ -193,4 +193,22 @@ CREATE TABLE usr_que_vw_stats
   Q_VW_DT      DATE
 )
 
+CREATE TABLE ew1.usr_que_vw_stats (
+    que_stat_id  uuid PRIMARY KEY,
+    q_event_nm text,
+    q_event_val1 text,
+    q_event_val2 text,
+    q_event_val3 text,
+    q_event_val4 text,
+    q_event_val5 text,
+    q_event_val6 text,
+    q_event_val7 text,
+    q_event_val8 text,
+    q_event_val9 text,
+    q_event_val10 text,
+    q_id text,
+    q_vw_dt timestamp,
+    tkn text,
+    usr_id text
+) ;
 
