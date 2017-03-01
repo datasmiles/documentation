@@ -212,3 +212,58 @@ CREATE TABLE ew1.usr_que_vw_stats (
     usr_id text
 ) ;
 
+
+ 
+
+
+ CREATE TABLE ew1.usr_vdo_vw_stats (
+    vdo_stat_id uuid PRIMARY KEY,
+    tkn text,
+    usr_id text,
+        vdo_id text,
+    vdo_vw_dt timestamp,
+    vdo_event_nm  text,
+    vdo_event_val1 text,
+    vdo_event_val2 text,
+    vdo_event_val3 text,
+    vdo_event_val4 text,
+    vdo_event_val5 text,
+    vdo_event_val6 text,
+    vdo_event_val7 text,
+    vdo_event_val8 text,
+    vdo_event_val9 text,
+    vdo_event_val10 text,
+    vdo_event_val11 text,
+    vdo_event_val12 text,
+    vdo_event_val13 text,
+    vdo_event_val14 text,
+    vdo_event_val15 text
+    ) ;
+    
+    
+    
+    
+    CREATE TABLE SCOTT.USR_VDO_VW_STATS
+(
+  VDO_STAT_ID     VARCHAR2(3000 BYTE),
+  TKN            VARCHAR2(3000 BYTE),
+  USR_ID         VARCHAR2(3000 BYTE),
+  VDO_ID         VARCHAR2(3000 BYTE),
+  VDO_VW_DT      DATE,
+  VDO_EVENT_NM       VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL1  VARCHAR2(3000 BYTE),
+   VDO_EVENT_VAL2  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL3  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL4  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL5  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL6  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL7  VARCHAR2(3000 BYTE),
+   VDO_EVENT_VAL8  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL9  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL10  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL11  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL12  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL13  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL14  VARCHAR2(3000 BYTE),
+  VDO_EVENT_VAL15  VARCHAR2(3000 BYTE)
+ );
