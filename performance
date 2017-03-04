@@ -24,3 +24,40 @@ no_of_third_correct counter,
 no_of_third_wrong counter,
 primary key(usr_id)
 ) ;
+
+
+create table ew_usr_perf_month_stats
+(
+usr_id  text,
+month_year_id uuid,
+month_id  text,
+year_id text,
+no_of_q_views  counter,
+no_of_vdo_views  counter,
+no_of_fst_correct counter,
+no_of_fst_wrong counter,
+no_of_sndt_correct counter,
+no_of_sndt_wrong counter,
+no_of_third_correct counter,
+no_of_third_wrong counter,
+primary key((usr_id,month_year_id), month_id, year_id)
+) ;
+
+
+
+create table ew_usr_perf_month_avg_stats
+(
+month_year_id uuid,
+month_id  text,
+year_id text,
+avg_no_of_q_views  counter,
+avg_no_of_vdo_views  counter,
+avg_no_of_fst_correct counter,
+avg_no_of_fst_wrong counter,
+avg_no_of_sndt_correct counter,
+avg_no_of_sndt_wrong counter,
+avg_no_of_third_correct counter,
+avg_no_of_third_wrong counter,
+primary key((month_year_id), month_id, year_id)
+) ;
+
