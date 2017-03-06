@@ -1,3 +1,16 @@
+
+create table ew_last_vw_vdo_dt
+       ... (
+       ... user_id  text,
+       ... crs_id  text,
+       ... mdl_id text,
+       ... topic_id text,
+       ... last_vw_time timestamp,
+       ... primary key((user_id,crs_id),mdl_id,topic_id)
+       ... );
+
+
+
 create table ew_avg_perf_stats
 (
 perf_stats_id uuid primary key,
