@@ -87,13 +87,14 @@ q_state_end_dt  date
 
 create table ew_verify_questions
 (
-verify_id uuid primary key,
+verify_id uuid ,
 q_id     text,
 tester_id text, 
 tested_dt timestamp,
 test_status text,
 test_comments text,
 q_state_start_dt timestamp,
-q_state_end_dt timestamp
+q_state_end_dt timestamp,
+primary key((q_id),verify_id)
 ); 
 
