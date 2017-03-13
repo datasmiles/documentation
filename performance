@@ -73,4 +73,27 @@ avg_no_of_third_correct counter,
 avg_no_of_third_wrong counter,
 primary key((month_year_id), month_id, year_id)
 ) ;
+create table ew_verify_questions
+(
+verify_id    varchar2(300),
+q_id     varchar2(300),
+tester_id varchar2(300), 
+tested_dt date,
+test_status varchar2(300),
+test_comments varchar2(300),
+q_state_start_dt date,
+q_state_end_dt  date
+) ;
+
+create table ew_verify_questions
+(
+verify_id uuid primary key,
+q_id     text,
+tester_id text, 
+tested_dt timestamp,
+test_status text,
+test_comments text,
+q_state_start_dt timestamp,
+q_state_end_dt timestamp
+); 
 
