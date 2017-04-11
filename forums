@@ -1,4 +1,4 @@
-
+  create table ew_qa_qry_counter(ID text primary key  , qry counter );
 
 create table ew_itm_qrys
 (
