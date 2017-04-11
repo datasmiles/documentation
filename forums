@@ -1,4 +1,23 @@
-  create table ew_qa_qry_counter(ID text primary key  , qry counter );
+ 
+ CREATE TABLE ew1.ew_qa_like (
+    qry_id text,
+    usr_id text,
+    cmnt_id uuid,
+    crt_ts timestamp,
+    like_dlike_flg int,
+    PRIMARY KEY ((qry_id, usr_id), cmnt_id)
+);
+
+CREATE TABLE ew1.ew_qa_like_stats (
+    qry_id text,
+    cmnt_id uuid,
+    dlike_cnt counter,
+    like_cnt counter,
+    PRIMARY KEY (qry_id, cmnt_id)
+);
+ 
+ 
+ create table ew_qa_qry_counter(ID text primary key  , qry counter );
 
 create table ew_itm_qrys
 (
