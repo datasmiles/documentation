@@ -29,3 +29,14 @@ primary key((usr_id),role_id)
  noti_msg text,
  snd_dt timestamp
  );
+
+
+CREATE TABLE ew1.vt_frs_chat_d (
+    comb_id text,
+    msg_ts timestamp,
+    msg_id timeuuid,
+    frm_usr text,
+    msg text,
+    read int,
+    PRIMARY KEY (comb_id, msg_ts, msg_id)
+)
