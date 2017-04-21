@@ -306,3 +306,31 @@ CREATE TABLE ew1.ew_vdo_rating (
     PRIMARY KEY (usr_id, vdo_id)
 );
 
+
+create table ew_usr_email
+(
+usr_id text,
+email text,
+otp text,
+otp_sent_dt timestamp,
+otp_verify_dt timestamp
+otp_status text,
+primary key ((usr_id,otp_status),email)
+);
+
+
+
+
+
+
+create table ew_usr_ph
+(
+usr_id text,
+ph text,
+otp text
+otp_sent_dt timestamp
+otp_verify_dt timestamp,
+otp_status  text,
+primary key ((usr_id,otp_status),ph)
+);
+
