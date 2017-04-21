@@ -314,6 +314,7 @@ otp text,
 otp_sent_dt timestamp,
 otp_verify_dt timestamp,
 otp_status text,
+email_flg text,
 primary key ((usr_id,otp_status),email)
 );
 
@@ -326,6 +327,6 @@ otp text,
 otp_sent_dt timestamp,
 otp_verify_dt timestamp,
 otp_status  text,
+ph_flg text,
 primary key ((usr_id,otp_status),ph)
 );
-
