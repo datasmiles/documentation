@@ -1,0 +1,8 @@
+create table usr_practice_topic_group
+(
+usr_id   text,
+topic_grp_id  text,
+status text,
+passed_dt timestamp,
+primary key(usr_id , topic_grp_id)
+) ;
